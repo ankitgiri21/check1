@@ -1,0 +1,36 @@
+{
+  "name": "cdo",
+  "version": "1.0.0",
+  "description": "CleanDo Identity Service",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create": "claudia create --handler lambda.handler --deploy-proxy-api --region ap-south-1 --profile cdo-dev-deploy",
+    "update": "claudia update --handler lambda.handler --deploy-proxy-api --region ap-south-1 --profile cdo-dev-deploy",
+    "prettyjs": "prettier --write --plugin-search-dir=. routes/*/////.js models/*/////.js helpers/*/////.js config/*/////.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1077.0",
+    "aws-serverless-express": "^3.3.5",
+    "axios": "^0.26.1",
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cheerio": "^1.0.0-rc.12",
+    "claudia": "^5.14.1",
+    "cors": "*",
+    "express": "^4.19.2",
+    "forever": "^4.0.3",
+    "jsforce": "^1.11.1",
+    "lodash": "^4.17.21",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-jwt": "*",
+    "prettier": "^2.8.8",
+    "request": "^2.88.2"
+  },
+  "author": "Piyush M Agarwal",
+  "license": "ISC",
+  "keywords": []
+}
